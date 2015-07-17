@@ -19,24 +19,35 @@ eventsApp.controller('EventController',
           creatorName: 'Bob Smith',
           duration: '1 hr',
           level: 'Advanced',
-          abstract: 'Blahdy blah blah'
+          abstract: 'Blahdy blah blah',
+          upVoteCount: 0
         },
         {
           name: 'Scopes for fun and profit',
           creatorName: 'Bobbbetttt Smith',
           duration: '2 hr',
           level: 'Beginner',
-          abstract: 'Blahdy blah blah'
+          abstract: 'Blahdy blah blah',
+          upVoteCount: 0
         },
         {
           name: 'Well Behaved Controllers',
           creatorName: 'Bob Smithy',
           duration: '3 hr',
           level: 'Intermidiate',
-          abstract: 'Blahdy blah blah'
+          abstract: 'Blahdy blah blah',
+          upVoteCount: 0
         }
       ]
 
     }
+
+    $scope.upVoteSession = function(session) {
+      session.upVoteCount++;
+    };
+
+    $scope.downVoteSession = function(session) {
+      session.upVoteCount--;
+    };
   }
 );
