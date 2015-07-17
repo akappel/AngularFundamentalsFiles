@@ -12,7 +12,30 @@ eventsApp.controller('EventController',
         city: 'Mountain View',
         province: 'CA'
       },
-      imageUrl: '/img/angularLogo.png'
+      imageUrl: '/img/angularLogo.png',
+      sessions: [
+        {
+          name: 'Directives Masterclass',
+          creatorName: 'Bob Smith',
+          duration: '1 hr',
+          level: 'Advanced',
+          abstract: 'Blahdy blah blah'
+        },
+        {
+          name: 'Scopes for fun and profit',
+          creatorName: 'Bobbbetttt Smith',
+          duration: '2 hr',
+          level: 'Beginner',
+          abstract: 'Blahdy blah blah'
+        },
+        {
+          name: 'Well Behaved Controllers',
+          creatorName: 'Bob Smithy',
+          duration: '3 hr',
+          level: 'Intermidiate',
+          abstract: 'Blahdy blah blah'
+        }
+      ]
 
     }
   }
